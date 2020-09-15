@@ -46,7 +46,7 @@ We can assign different variables to the parameters PATH, TRANSACTIONS, BLOCKS, 
 based on where we have the source files or if we want to display additional information about
 the time it takes to parse those files.
 
-Static method:\
+### Static method:\
 We might have the files in our Desktop rather than in the ./Downloads folder. Thus, we would assign
 ```os.path.join(os.path.expanduser('~'), 'Desktop')``` to PATH.\
 We might even have a different .json called ```random.json``` with transactions data. Then, we would assign 
@@ -54,7 +54,7 @@ We might even have a different .json called ```random.json``` with transactions 
 We might want to control the execution time of the parsing of this file. Then, we would assign
 ```True``` to CONTROL_TIME
 
-Dynamic method:\
+### Dynamic method:\
 This is a more advanced method, more convenient, that allows us to change those parameters in-the-run when we execute the file, without changing any line of the original code, for example:
 
 We can run ```python3 main.py --path /home/datasci/Desktop``` or a simplified command: ```python3 main.py -p /home/datasci/Desktop``` if we have the .json files there\
