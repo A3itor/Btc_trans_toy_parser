@@ -1,7 +1,7 @@
 # Bitcoin
 
 This small project is the result of the final assignment from "Programming for Data Science" from UOC.
-It parses raw .json generated files that contain data from bitcoin blocks and transactions and extracts some information afterwards.
+It parses raw .json generated files that contain data from bitcoin blocks and transactions and extracts some information afterwards. It is a toy tool only meant to get comfortable programming and debugging with an IDE 
 
 
 ## Author
@@ -42,14 +42,14 @@ python3 main.py
 ```
 
 Now, the main.py file has some options based on preferences:
-We can assign different variables to the parameters PATH, TRANSACTIONS, BLOCKS, CONTROL_TIME, 
+We can assign different variables to the parameters PATH, TRANSACTIONS, BLOCKS, CONTROL_TIME,
 based on where we have the source files or if we want to display additional information about
 the time it takes to parse those files.
 
 ### Static method:
 We might have the files in our Desktop rather than in the ./Downloads folder. Thus, we would assign
 ```os.path.join(os.path.expanduser('~'), 'Desktop')``` to PATH.\
-We might even have a different .json called ```random.json``` with transactions data. Then, we would assign 
+We might even have a different .json called ```random.json``` with transactions data. Then, we would assign
 ```os.path.join(PATH, 'random.json')``` to TRANSACTIONS.\
 We might want to control the execution time of the parsing of this file. Then, we would assign
 ```True``` to CONTROL_TIME
@@ -66,7 +66,7 @@ Or we can run ```python3 main.py --control_time True``` or a simplified command:
 to display the execution time of the parsing of the .json file
 
 Or we might run two of them with the simplified version:\
-```python3 main.py -p /home/datasci/Downloads -ctrl True``` 
+```python3 main.py -p /home/datasci/Downloads -ctrl True```
 
 The program should take around ~20 seconds to execute using an average laptop
 
@@ -78,7 +78,4 @@ The package data contains a script that parses the .json files and extracts info
 
 
 ## The dataset
-The dataset consists of two .json files containing a subset of bitcoin transactions and blocks 
-
-
-
+The dataset consists of two .json files containing a subset of bitcoin transactions and blocks
