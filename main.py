@@ -9,6 +9,7 @@ TRANSACTIONS = os.path.join(PATH, 'txs.json')
 BLOCKS = os.path.join(PATH, 'blocks.json')
 CONTROL_TIME=False
 SHOW_PLOTS=False
+PRICE=True
 
 ######################################   RUN   ######################################
 
@@ -20,6 +21,7 @@ if __name__ == "__main__":
     parser.add_argument('-b', '--blocks', default=BLOCKS, help='Add the name of the blocks.json file to the absolute path')
     parser.add_argument('-ctrl', '--control_time', default= CONTROL_TIME, help='Control the time to parse the .json files by passing True or False')
     parser.add_argument('-plt', '--plot', default=SHOW_PLOTS, help='To show interactive plots')
+    parser.add_argument('-pr', '--price', default=PRICE, help='To show bitcoin current price')
     args = parser.parse_args()
 
 
@@ -30,5 +32,3 @@ if __name__ == "__main__":
     data.num_trans(blocks)
     data.time_between_blocks(blocks)
     data.avg_size_hourly(blocks)
-
-
