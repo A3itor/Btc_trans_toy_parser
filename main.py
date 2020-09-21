@@ -10,6 +10,7 @@ BLOCKS = os.path.join(PATH, 'blocks.json')
 CONTROL_TIME=False
 SHOW_PLOTS=False
 PRICE=True
+TEST=True
 
 ######################################   RUN   ######################################
 
@@ -22,6 +23,7 @@ if __name__ == "__main__":
     parser.add_argument('-ctrl', '--control_time', default= CONTROL_TIME, help='Control the time to parse the .json files by passing True or False')
     parser.add_argument('-plt', '--plot', default=SHOW_PLOTS, help='To show interactive plots')
     parser.add_argument('-pr', '--price', default=PRICE, help='To show bitcoin current price')
+    parser.add_argument('-t', '--test', default=TEST, help='To activate test')
     args = parser.parse_args()
 
 
