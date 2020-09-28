@@ -11,7 +11,6 @@ CONTROL_TIME=False
 SHOW_PLOTS=False
 PRICE=True
 TEST=True
-EVAL=True
 
 ######################################   RUN   ######################################
 
@@ -25,7 +24,6 @@ if __name__ == "__main__":
     parser.add_argument('-plt', '--plot', default=SHOW_PLOTS, help='To show interactive plots')
     parser.add_argument('-pr', '--price', default=PRICE, help='To show bitcoin current price')
     parser.add_argument('-t', '--test', default=TEST, help='To activate test')
-    parser.add_argument('-e', '--test', default=TEST, help='To activate eval')
     args = parser.parse_args()
 
 
